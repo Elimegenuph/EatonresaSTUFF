@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="" utf-8">
+    <title>Eli demo page</title>
+
+<style>
+div{
+width: 300px;
+height: 300px;
+background-color: blue;
+margin: 50px;
+
+}
+#static {
+
+background-color: brown;
+position:static;
+}
+#Sticky{
+background-color: orange;
+position:sticky; /*static untill hits edge*/
+
+}
+
+#relative{
+background-color: yellow; /* moves box but leaves hole*/
+position: relative;
+left: 100px;
+top: -100px;
+z-index: -10;
+
+}
+
+#fixed{
+background-color: greenyellow;
+position: fixed;
+top: 50px;
+right: 50px;
+
+
+
+}
+
+
+#absolute{
+
+background-color: lightskyblue;
+position:absolute;
+right: 30px;
+bottom: 50px;
+
+
+
+
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+<div id="static"></div>
+<div id="sticky"></div>
+<div id="relative"></div>
+<div id="fixed"></div>
+<div id="absolute"></div>
+
+
+
+</body>
+
+
+</html>
